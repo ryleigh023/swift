@@ -1,4 +1,4 @@
-# ios developer program
+# iOS developer program
 
 this repo holds everything from my ios developer program: code, exercises, and notes.
 
