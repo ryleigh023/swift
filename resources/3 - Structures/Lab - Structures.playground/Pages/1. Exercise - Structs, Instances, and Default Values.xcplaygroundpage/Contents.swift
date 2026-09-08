@@ -18,7 +18,22 @@ somePlace.longitude = 0.125226
 print("Updated latitude: ", somePlace.latitude,"and longitude:", somePlace.longitude )
 
 //:  Create a variable instance of `Book` called `favoriteBook` without supplying any arguments. Print out the title of `favoriteBook`. Does it currently reflect the title of your favorite book? Probably not. Change all four properties of `favoriteBook` to reflect your favorite book. Then, using the properties of `favoriteBook`, print out facts about the book.
+struct Book {
+    var title: String = ""
+    var author: String = ""
+    var pages: Int = 0
+    var publicationYear: Int = 0
+}
 
+var favoriteBook = Book()
+print(favoriteBook.title)
+
+favoriteBook.title = "Dune"
+favoriteBook.author = "Frank Herbert"
+favoriteBook.pages = 412
+favoriteBook.publicationYear = 1965
+
+print("\(favoriteBook.title) is a science fiction novel written by \(favoriteBook.author). It was published in \(favoriteBook.publicationYear) and has \(favoriteBook.pages) pages.")
 
 /*:
 page 1 of 10  |  [Next: App Exercise - Workout Tracking](@next)
